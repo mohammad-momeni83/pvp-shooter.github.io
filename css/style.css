@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.game-container {
+    width: 100vw;
+    height: 100vh;
+    background: url(../media/image/pixel-bg.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
