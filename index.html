@@ -4,20 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shooter</title>
+    <title>shooter-pvp</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- link css style -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- link jquery -->
-    <script src="./jquery-ui-1.14.1/jquery-ui.min.js"></script>
+    <script src="./js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
     <!-- link jquery ui -->
-    <script src="./js/script.js"></script>
-    <!-- link js -->
+    <script src="./js/main.js"></script>
+    <!-- link main.js to manage game logic -->
+    <script src="./js/players.js"></script>
+    <!-- link player.js for management players actions  -->
+    <script src="./js/bullets.js"></script>
+    <!-- link bullets.js for management shooting actions  -->
+    <script src="./js/obstacles.js"></script>
+    <!-- link obstacles.js for management obstacles in game  -->
 </head>
 
 <body>
-    <main class="game-container"></main>
+    <main class="game-container">
+        <header class="game-info">
+            <div class="player-info-L">
+                <p>player khamenei</p>
+                <span>score: 0</span>
 
+            </div>
+
+            <div class="player-info-R">
+                <p>player trump</p>
+                <span>score: 0</span>
+            </div>
+
+        </header>
+        <section class="game-area-right">
+            <img class="character-R" src="./assets/image/characters/Sprite-0003-Recovered.webp" alt="">
+
+        </section>
+        <section class="game-area-left">
+            <img class="character-L" src="./assets/image/characters/Sprite-00032-Recovered.webp" alt="">
+
+
+        </section>
+
+
+    </main>
 </body>
 
 </html>

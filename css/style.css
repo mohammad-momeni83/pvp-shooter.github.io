@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "press2";
+    src: url(../assets/fonts/PressStart2P-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(2, 4fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-image: url(../assets/image/pixel-bg.png);
+    background-position: center;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+}
+
+.game-info {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 3;
+    font-family: "press2";
+    /* background: #be7474; */
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+}
+
+.player-info-R p {
+    padding-bottom: 0.5vw;
+}
+
+.player-info-L p {
+    padding-bottom: 0.5vw;
+}
+
+.game-area-right {
+    display: inline;
+    justify-content: end;
+    grid-area: 2 / 2 / 4 / 3;
+    background-color: rgba(55, 165, 255, 0.15);
+}
+
+.character-R {
+    /* width: auto; */
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.character-L {
+    /* width: auto; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.game-area-left {
+    grid-area: 2 / 1 / 4 / 2;
+    background-color: rgb(255, 71, 71, 0.15);
+}
