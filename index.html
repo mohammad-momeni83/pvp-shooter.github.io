@@ -3,35 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Jquery">
+    <meta name="author" content="Momeni Momeni:https://www.linkedin.com/in/mohammad-momeni-987633316/  \|/  Yousef Pourkahnooji:https://www.linkedin.com/in/yousef-pour-kahnooji-a725922b1/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shooter-pvp</title>
-    <link rel="stylesheet" href="./css/style.css">
+
     <!-- link css style -->
-
-
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-
-
     <main class="game-container no-selection ">
         <div class="show-dialog">
             <p>tips :</p>
-            <p>1- use arrow keys to move</p>
-            <p>2- tip 2</p>
+            <p>1-Right-player use arrow keys to move and 0(on numlock) to shoot</p>
+            <p>2-Left-player use W,A,S,D keys to move and space to shoot</p>
+            <p>3-get 10 points to win</p>
+            <p>4- Important: have fun!</p>
         </div>
 
         <header class="game-info">
 
             <div class="player-info-L">
-                <p>player khamenei</p>
+                <p>player Left</p>
                 <span>score: 0</span>
             </div>
 
             <div class="player-info-R">
-                <p>player trump</p>
+                <p>player Right</p>
                 <span>score: 0</span>
             </div>
 
@@ -41,7 +41,7 @@
             <img class="player character-R" src="./assets/image/characters/player-red.webp" alt="">
 
             <!-- obstacles -->
-            <img src="assets/image/obs.png" style="top: 80%; right: 35%;" class="obstacle" alt="">
+            <!-- <img src="assets/image/obs.png" style="top: 80%; right: 35%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 55%; right: 28.5%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 95%; right: 70%; transform: rotate(90deg);" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 75%; right: 45.5%;" class="obstacle" alt="">
@@ -49,7 +49,7 @@
             <img src="assets/image/obs.PNG" style="top: 70%; right: 7.5%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 70%; right: 15%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 96%; right: 25%;" class="obstacle" alt="">
-            <img src="assets/image/obs.PNG" style="top: 50%; right: 62%;" class="obstacle" alt="">
+            <img src="assets/image/obs.PNG" style="top: 50%; right: 62%;" class="obstacle" alt=""> -->
 
         </section>
         <section class="game-area-left">
@@ -57,7 +57,7 @@
             <img class="player character-L" src="./assets/image/characters/player-blue.webp" alt="">
 
             <!-- obstacles (mirrored from right side) -->
-            <img src="assets/image/obs.png" style="top: 80%; left: 35%;" class="obstacle" alt="">
+            <!-- <img src="assets/image/obs.png" style="top: 80%; left: 35%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 55%; left: 28.5%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 95%; left: 70%; transform: rotate(90deg);" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 75%; left: 45.5%;" class="obstacle" alt="">
@@ -65,21 +65,13 @@
             <img src="assets/image/obs.PNG" style="top: 70%; left: 7.5%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 70%; left: 15%;" class="obstacle" alt="">
             <img src="assets/image/obs.PNG" style="top: 96%; left: 25%;" class="obstacle" alt="">
-            <img src="assets/image/obs.PNG" style="top: 50%; left: 62%;" class="obstacle" alt="">
+            <img src="assets/image/obs.PNG" style="top: 50%; left: 62%;" class="obstacle" alt=""> -->
         </section>
 
 
     </main>
 
-
-
-
-
     <!-- adding js types ------------------------------------------------------- -->
-
-
-
-
     <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- link jquery -->
     <script src="./js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
@@ -94,7 +86,7 @@
     <script src="./js/obstacles.js"></script>
     <!-- link obstacles.js for management obstacles in game  -->
 
-
+    <!-- create a show dialog  -->
     <script>
         $(function() {
             $(".show-dialog").dialog();
